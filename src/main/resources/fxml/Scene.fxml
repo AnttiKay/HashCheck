@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="273.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.FXMLController">
+   <children>
+      <TextField fx:id="hashTextfield" layoutX="14.0" layoutY="46.0" prefHeight="25.0" prefWidth="249.0" />
+      <Button fx:id="compareHashesButton" layoutX="15.0" layoutY="192.0" mnemonicParsing="false" onAction="#compareHashesButtonAction" text="CompareHashes" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="249.0" text="Hash to be compared." />
+      <Button fx:id="browseFilesButton" layoutX="279.0" layoutY="117.0" mnemonicParsing="false" onAction="#browseFilesButtonAction" text="Browse files" />
+      <Label layoutX="15.0" layoutY="83.0" prefHeight="25.0" prefWidth="249.0" text="Filepath to comparable file." />
+      <TextField fx:id="filepathTextfield" layoutX="15.0" layoutY="117.0" prefHeight="25.0" prefWidth="249.0" />
+      <TextField fx:id="calculatedHashTextfield" layoutX="154.0" layoutY="192.0" prefHeight="25.0" prefWidth="249.0" />
+      <Label layoutX="154.0" layoutY="167.0" prefHeight="25.0" prefWidth="249.0" text="Calculated Hash from file" />
+      <Label fx:id="hashesMatchLabel" layoutX="15.0" layoutY="236.0" prefHeight="25.0" prefWidth="249.0" />
+      <ChoiceBox fx:id="hashAlgorithmChoiceBox" layoutX="299.0" layoutY="46.0" prefHeight="25.0" prefWidth="119.0" />
+      <Label layoutX="296.0" layoutY="14.0" prefHeight="25.0" prefWidth="161.0" text="Hash algorithm" />
+   </children>
+</AnchorPane>
